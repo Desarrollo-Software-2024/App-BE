@@ -1,0 +1,97 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\nl189\\Documents\\Projects\\Netflis\\src\\Netflis.HttpApi.Host\\wwwroot\\global-styles.css",
+      "PackagePath": "staticwebassets\\global-styles.css"
+    },
+    {
+      "Id": "C:\\Users\\nl189\\Documents\\Projects\\Netflis\\src\\Netflis.HttpApi.Host\\wwwroot\\images\\clients\\angular.svg",
+      "PackagePath": "staticwebassets\\images\\clients\\angular.svg"
+    },
+    {
+      "Id": "C:\\Users\\nl189\\Documents\\Projects\\Netflis\\src\\Netflis.HttpApi.Host\\wwwroot\\images\\clients\\aspnetcore.svg",
+      "PackagePath": "staticwebassets\\images\\clients\\aspnetcore.svg"
+    },
+    {
+      "Id": "C:\\Users\\nl189\\Documents\\Projects\\Netflis\\src\\Netflis.HttpApi.Host\\wwwroot\\images\\clients\\blazor.svg",
+      "PackagePath": "staticwebassets\\images\\clients\\blazor.svg"
+    },
+    {
+      "Id": "C:\\Users\\nl189\\Documents\\Projects\\Netflis\\src\\Netflis.HttpApi.Host\\wwwroot\\images\\clients\\swagger.svg",
+      "PackagePath": "staticwebassets\\images\\clients\\swagger.svg"
+    },
+    {
+      "Id": "C:\\Users\\nl189\\Documents\\Projects\\Netflis\\src\\Netflis.HttpApi.Host\\wwwroot\\images\\favicon\\android-chrome-192x192.png",
+      "PackagePath": "staticwebassets\\images\\favicon\\android-chrome-192x192.png"
+    },
+    {
+      "Id": "C:\\Users\\nl189\\Documents\\Projects\\Netflis\\src\\Netflis.HttpApi.Host\\wwwroot\\images\\favicon\\android-chrome-256x256.png",
+      "PackagePath": "staticwebassets\\images\\favicon\\android-chrome-256x256.png"
+    },
+    {
+      "Id": "C:\\Users\\nl189\\Documents\\Projects\\Netflis\\src\\Netflis.HttpApi.Host\\wwwroot\\images\\favicon\\apple-touch-icon.png",
+      "PackagePath": "staticwebassets\\images\\favicon\\apple-touch-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\nl189\\Documents\\Projects\\Netflis\\src\\Netflis.HttpApi.Host\\wwwroot\\images\\favicon\\browserconfig.xml",
+      "PackagePath": "staticwebassets\\images\\favicon\\browserconfig.xml"
+    },
+    {
+      "Id": "C:\\Users\\nl189\\Documents\\Projects\\Netflis\\src\\Netflis.HttpApi.Host\\wwwroot\\images\\favicon\\favicon-16x16.png",
+      "PackagePath": "staticwebassets\\images\\favicon\\favicon-16x16.png"
+    },
+    {
+      "Id": "C:\\Users\\nl189\\Documents\\Projects\\Netflis\\src\\Netflis.HttpApi.Host\\wwwroot\\images\\favicon\\favicon-32x32.png",
+      "PackagePath": "staticwebassets\\images\\favicon\\favicon-32x32.png"
+    },
+    {
+      "Id": "C:\\Users\\nl189\\Documents\\Projects\\Netflis\\src\\Netflis.HttpApi.Host\\wwwroot\\images\\favicon\\favicon.ico",
+      "PackagePath": "staticwebassets\\images\\favicon\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\nl189\\Documents\\Projects\\Netflis\\src\\Netflis.HttpApi.Host\\wwwroot\\images\\favicon\\mstile-150x150.png",
+      "PackagePath": "staticwebassets\\images\\favicon\\mstile-150x150.png"
+    },
+    {
+      "Id": "C:\\Users\\nl189\\Documents\\Projects\\Netflis\\src\\Netflis.HttpApi.Host\\wwwroot\\images\\favicon\\safari-pinned-tab.svg",
+      "PackagePath": "staticwebassets\\images\\favicon\\safari-pinned-tab.svg"
+    },
+    {
+      "Id": "C:\\Users\\nl189\\Documents\\Projects\\Netflis\\src\\Netflis.HttpApi.Host\\wwwroot\\images\\favicon\\site.webmanifest",
+      "PackagePath": "staticwebassets\\images\\favicon\\site.webmanifest"
+    },
+    {
+      "Id": "C:\\Users\\nl189\\Documents\\Projects\\Netflis\\src\\Netflis.HttpApi.Host\\wwwroot\\images\\logo\\lepton\\logo-dark.png",
+      "PackagePath": "staticwebassets\\images\\logo\\lepton\\logo-dark.png"
+    },
+    {
+      "Id": "C:\\Users\\nl189\\Documents\\Projects\\Netflis\\src\\Netflis.HttpApi.Host\\wwwroot\\images\\logo\\lepton\\logo-light.png",
+      "PackagePath": "staticwebassets\\images\\logo\\lepton\\logo-light.png"
+    },
+    {
+      "Id": "C:\\Users\\nl189\\Documents\\Projects\\Netflis\\src\\Netflis.HttpApi.Host\\wwwroot\\images\\logo\\leptonx\\icon.svg",
+      "PackagePath": "staticwebassets\\images\\logo\\leptonx\\icon.svg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Netflis.HttpApi.Host.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Netflis.HttpApi.Host.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Netflis.HttpApi.Host.props",
+      "PackagePath": "build\\Netflis.HttpApi.Host.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Netflis.HttpApi.Host.props",
+      "PackagePath": "buildMultiTargeting\\Netflis.HttpApi.Host.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Netflis.HttpApi.Host.props",
+      "PackagePath": "buildTransitive\\Netflis.HttpApi.Host.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,15 @@
+C:\Users\nl189\Documents\Projects\Netflis\src\Netflis.Application.Contracts\bin\Debug\net8.0\Netflis.Application.Contracts.deps.json
+C:\Users\nl189\Documents\Projects\Netflis\src\Netflis.Application.Contracts\bin\Debug\net8.0\Netflis.Application.Contracts.dll
+C:\Users\nl189\Documents\Projects\Netflis\src\Netflis.Application.Contracts\bin\Debug\net8.0\Netflis.Application.Contracts.pdb
+C:\Users\nl189\Documents\Projects\Netflis\src\Netflis.Application.Contracts\bin\Debug\net8.0\Netflis.Domain.Shared.dll
+C:\Users\nl189\Documents\Projects\Netflis\src\Netflis.Application.Contracts\bin\Debug\net8.0\Netflis.Domain.Shared.pdb
+C:\Users\nl189\Documents\Projects\Netflis\src\Netflis.Application.Contracts\obj\Debug\net8.0\Netflis.Application.Contracts.csproj.AssemblyReference.cache
+C:\Users\nl189\Documents\Projects\Netflis\src\Netflis.Application.Contracts\obj\Debug\net8.0\Netflis.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nl189\Documents\Projects\Netflis\src\Netflis.Application.Contracts\obj\Debug\net8.0\Netflis.Application.Contracts.AssemblyInfoInputs.cache
+C:\Users\nl189\Documents\Projects\Netflis\src\Netflis.Application.Contracts\obj\Debug\net8.0\Netflis.Application.Contracts.AssemblyInfo.cs
+C:\Users\nl189\Documents\Projects\Netflis\src\Netflis.Application.Contracts\obj\Debug\net8.0\Netflis.Application.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\nl189\Documents\Projects\Netflis\src\Netflis.Application.Contracts\obj\Debug\net8.0\Netflis..083AAE05.Up2Date
+C:\Users\nl189\Documents\Projects\Netflis\src\Netflis.Application.Contracts\obj\Debug\net8.0\Netflis.Application.Contracts.dll
+C:\Users\nl189\Documents\Projects\Netflis\src\Netflis.Application.Contracts\obj\Debug\net8.0\refint\Netflis.Application.Contracts.dll
+C:\Users\nl189\Documents\Projects\Netflis\src\Netflis.Application.Contracts\obj\Debug\net8.0\Netflis.Application.Contracts.pdb
+C:\Users\nl189\Documents\Projects\Netflis\src\Netflis.Application.Contracts\obj\Debug\net8.0\ref\Netflis.Application.Contracts.dll

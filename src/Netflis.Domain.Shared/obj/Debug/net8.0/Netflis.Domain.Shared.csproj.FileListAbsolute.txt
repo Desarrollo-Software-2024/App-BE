@@ -1,0 +1,13 @@
+C:\Users\nl189\Documents\Projects\Netflis\src\Netflis.Domain.Shared\bin\Debug\net8.0\Netflis.Domain.Shared.deps.json
+C:\Users\nl189\Documents\Projects\Netflis\src\Netflis.Domain.Shared\bin\Debug\net8.0\Netflis.Domain.Shared.dll
+C:\Users\nl189\Documents\Projects\Netflis\src\Netflis.Domain.Shared\bin\Debug\net8.0\Netflis.Domain.Shared.pdb
+C:\Users\nl189\Documents\Projects\Netflis\src\Netflis.Domain.Shared\obj\Debug\net8.0\Netflis.Domain.Shared.csproj.AssemblyReference.cache
+C:\Users\nl189\Documents\Projects\Netflis\src\Netflis.Domain.Shared\obj\Debug\net8.0\Netflis.Domain.Shared.EmbeddedFilesManifest.cache
+C:\Users\nl189\Documents\Projects\Netflis\src\Netflis.Domain.Shared\obj\Debug\net8.0\Netflis.Domain.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nl189\Documents\Projects\Netflis\src\Netflis.Domain.Shared\obj\Debug\net8.0\Netflis.Domain.Shared.AssemblyInfoInputs.cache
+C:\Users\nl189\Documents\Projects\Netflis\src\Netflis.Domain.Shared\obj\Debug\net8.0\Netflis.Domain.Shared.AssemblyInfo.cs
+C:\Users\nl189\Documents\Projects\Netflis\src\Netflis.Domain.Shared\obj\Debug\net8.0\Netflis.Domain.Shared.csproj.CoreCompileInputs.cache
+C:\Users\nl189\Documents\Projects\Netflis\src\Netflis.Domain.Shared\obj\Debug\net8.0\Netflis.Domain.Shared.dll
+C:\Users\nl189\Documents\Projects\Netflis\src\Netflis.Domain.Shared\obj\Debug\net8.0\refint\Netflis.Domain.Shared.dll
+C:\Users\nl189\Documents\Projects\Netflis\src\Netflis.Domain.Shared\obj\Debug\net8.0\Netflis.Domain.Shared.pdb
+C:\Users\nl189\Documents\Projects\Netflis\src\Netflis.Domain.Shared\obj\Debug\net8.0\ref\Netflis.Domain.Shared.dll

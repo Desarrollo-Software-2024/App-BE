@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Netflis.HttpApi.Host.props" />
+</Project>
