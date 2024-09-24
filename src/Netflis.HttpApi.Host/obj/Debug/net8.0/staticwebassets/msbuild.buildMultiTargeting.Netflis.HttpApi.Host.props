@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\Netflis.HttpApi.Host.props" />
-</Project>
