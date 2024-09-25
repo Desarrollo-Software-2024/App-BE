@@ -1,0 +1,85 @@
+{
+  "template": "app",
+  "imports": {
+    "Volo.Abp.Account": {
+      "version": "8.3.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.OpenIddict": {
+      "version": "8.3.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.Identity": {
+      "version": "8.3.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.TenantManagement": {
+      "version": "8.3.0",
+      "isInstalled": true
+    }
+  },
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "Netflis.Application": {
+      "path": "src/Netflis.Application/Netflis.Application.abppkg",
+      "folder": "src"
+    },
+    "Netflis.Application.Tests": {
+      "path": "test/Netflis.Application.Tests/Netflis.Application.Tests.abppkg",
+      "folder": "test"
+    },
+    "Netflis.Domain.Shared": {
+      "path": "src/Netflis.Domain.Shared/Netflis.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "Netflis.Application.Contracts": {
+      "path": "src/Netflis.Application.Contracts/Netflis.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "Netflis.HttpApi": {
+      "path": "src/Netflis.HttpApi/Netflis.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "Netflis.HttpApi.Client": {
+      "path": "src/Netflis.HttpApi.Client/Netflis.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "Netflis.EntityFrameworkCore.Tests": {
+      "path": "test/Netflis.EntityFrameworkCore.Tests/Netflis.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "Netflis.EntityFrameworkCore": {
+      "path": "src/Netflis.EntityFrameworkCore/Netflis.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "Netflis.TestBase": {
+      "path": "test/Netflis.TestBase/Netflis.TestBase.abppkg",
+      "folder": "test"
+    },
+    "Netflis.Domain.Tests": {
+      "path": "test/Netflis.Domain.Tests/Netflis.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "Netflis.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/Netflis.HttpApi.Client.ConsoleTestApp/Netflis.HttpApi.Client.ConsoleTestApp.abppkg",
+      "folder": "test"
+    },
+    "Netflis.DbMigrator": {
+      "path": "src/Netflis.DbMigrator/Netflis.DbMigrator.abppkg",
+      "folder": "src"
+    },
+    "Netflis.HttpApi.Host": {
+      "path": "src/Netflis.HttpApi.Host/Netflis.HttpApi.Host.abppkg",
+      "folder": "src"
+    },
+    "Netflis.Domain": {
+      "path": "src/Netflis.Domain/Netflis.Domain.abppkg",
+      "folder": "src"
+    }
+  }
+}
