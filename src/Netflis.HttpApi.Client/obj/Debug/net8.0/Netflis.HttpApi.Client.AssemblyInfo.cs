@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Netflis.HttpApi.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+56f6c053df1086dea69e9d15fae9c099354e4310")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2996b8b56c2bdf3f280eb0abef200db31f1966d2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Netflis.HttpApi.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Netflis.HttpApi.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
