@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Netflis.HttpApi.Client.ConsoleTestApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+56cc69baa81629f86236d4f6fb13f6237b860f37")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bcde2104f7cd7c1bb74d66a61e16e353407795ae")]
 [assembly: System.Reflection.AssemblyProductAttribute("Netflis.HttpApi.Client.ConsoleTestApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Netflis.HttpApi.Client.ConsoleTestApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

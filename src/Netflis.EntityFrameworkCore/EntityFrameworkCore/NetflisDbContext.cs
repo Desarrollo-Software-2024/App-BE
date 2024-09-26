@@ -15,6 +15,7 @@ using Volo.Abp.OpenIddict.EntityFrameworkCore;
 using Volo.Abp.TenantManagement;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
 using Netflis.Series;
+using Netflis.ListaSeguimientos;
 
 namespace Netflis.EntityFrameworkCore;
 
@@ -28,6 +29,7 @@ public class NetflisDbContext :
 {
     /* Add DbSet properties for your Aggregate Roots / Entities here. */
     public DbSet<Serie> Series { get; set; }
+    public DbSet<ListaSeguimiento> ListaSeguimientos { get; set; }
 
     #region Entities from the modules
 
@@ -83,6 +85,14 @@ public class NetflisDbContext :
             b.Property(x => x.calificacionImdb).IsRequired();
             b.Property(x => x.duracion).IsRequired();
             b.Property(x => x.tipo).IsRequired().HasMaxLength(128);
+        }
+    );
+
+        builder.Entity<ListaSeguimiento>(b =>
+        {
+            b.ToTable(NetflisConsts.DbTablePrefix + "ListaSeguimiento",
+                NetflisConsts.DbSchema);
+            b.ConfigureByConvention(); //Establece una configuracion por defecto
         }
     );
 
