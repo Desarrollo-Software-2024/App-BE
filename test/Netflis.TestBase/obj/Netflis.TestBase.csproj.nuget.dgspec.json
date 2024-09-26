@@ -1,26 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "/Users/franciscobournissen/Documents/Development/desarrollo_de_software/App-BE/test/Netflis.TestBase/Netflis.TestBase.csproj": {}
+    "C:\\Users\\gonga\\source\\repos\\Netflis\\test\\Netflis.TestBase\\Netflis.TestBase.csproj": {}
   },
   "projects": {
-    "/Users/franciscobournissen/Documents/Development/desarrollo_de_software/App-BE/test/Netflis.TestBase/Netflis.TestBase.csproj": {
+    "C:\\Users\\gonga\\source\\repos\\Netflis\\test\\Netflis.TestBase\\Netflis.TestBase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/franciscobournissen/Documents/Development/desarrollo_de_software/App-BE/test/Netflis.TestBase/Netflis.TestBase.csproj",
+        "projectUniqueName": "C:\\Users\\gonga\\source\\repos\\Netflis\\test\\Netflis.TestBase\\Netflis.TestBase.csproj",
         "projectName": "Netflis.TestBase",
-        "projectPath": "/Users/franciscobournissen/Documents/Development/desarrollo_de_software/App-BE/test/Netflis.TestBase/Netflis.TestBase.csproj",
-        "packagesPath": "/Users/franciscobournissen/.nuget/packages/",
-        "outputPath": "/Users/franciscobournissen/Documents/Development/desarrollo_de_software/App-BE/test/Netflis.TestBase/obj/",
+        "projectPath": "C:\\Users\\gonga\\source\\repos\\Netflis\\test\\Netflis.TestBase\\Netflis.TestBase.csproj",
+        "packagesPath": "C:\\Users\\gonga\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gonga\\Source\\Repos\\Netflis\\test\\Netflis.TestBase\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/franciscobournissen/Documents/Development/desarrollo_de_software/App-BE/NuGet.Config",
-          "/Users/franciscobournissen/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\gonga\\source\\repos\\Netflis\\NuGet.Config",
+          "C:\\Users\\gonga\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -33,6 +36,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -102,7 +110,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/8.0.4/libexec/sdk/8.0.104/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

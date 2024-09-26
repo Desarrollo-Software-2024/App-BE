@@ -7510,33 +7510,36 @@
     ]
   },
   "packageFolders": {
-    "/Users/franciscobournissen/.nuget/packages/": {}
+    "C:\\Users\\gonga\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/franciscobournissen/Documents/Development/desarrollo_de_software/App-BE/test/Netflis.HttpApi.Client.ConsoleTestApp/Netflis.HttpApi.Client.ConsoleTestApp.csproj",
+      "projectUniqueName": "C:\\Users\\gonga\\source\\repos\\Netflis\\test\\Netflis.HttpApi.Client.ConsoleTestApp\\Netflis.HttpApi.Client.ConsoleTestApp.csproj",
       "projectName": "Netflis.HttpApi.Client.ConsoleTestApp",
-      "projectPath": "/Users/franciscobournissen/Documents/Development/desarrollo_de_software/App-BE/test/Netflis.HttpApi.Client.ConsoleTestApp/Netflis.HttpApi.Client.ConsoleTestApp.csproj",
-      "packagesPath": "/Users/franciscobournissen/.nuget/packages/",
-      "outputPath": "/Users/franciscobournissen/Documents/Development/desarrollo_de_software/App-BE/test/Netflis.HttpApi.Client.ConsoleTestApp/obj/",
+      "projectPath": "C:\\Users\\gonga\\source\\repos\\Netflis\\test\\Netflis.HttpApi.Client.ConsoleTestApp\\Netflis.HttpApi.Client.ConsoleTestApp.csproj",
+      "packagesPath": "C:\\Users\\gonga\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gonga\\Source\\Repos\\Netflis\\test\\Netflis.HttpApi.Client.ConsoleTestApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/franciscobournissen/Documents/Development/desarrollo_de_software/App-BE/NuGet.Config",
-        "/Users/franciscobournissen/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\gonga\\source\\repos\\Netflis\\NuGet.Config",
+        "C:\\Users\\gonga\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/franciscobournissen/Documents/Development/desarrollo_de_software/App-BE/src/Netflis.HttpApi.Client/Netflis.HttpApi.Client.csproj": {
-              "projectPath": "/Users/franciscobournissen/Documents/Development/desarrollo_de_software/App-BE/src/Netflis.HttpApi.Client/Netflis.HttpApi.Client.csproj"
+            "C:\\Users\\gonga\\source\\repos\\Netflis\\src\\Netflis.HttpApi.Client\\Netflis.HttpApi.Client.csproj": {
+              "projectPath": "C:\\Users\\gonga\\source\\repos\\Netflis\\src\\Netflis.HttpApi.Client\\Netflis.HttpApi.Client.csproj"
             }
           }
         }
@@ -7545,6 +7548,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -7584,7 +7592,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/8.0.4/libexec/sdk/8.0.104/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

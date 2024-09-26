@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Netflis.DbMigrator
-build_property.ProjectDir = /Users/franciscobournissen/Documents/Development/desarrollo_de_software/App-BE/src/Netflis.DbMigrator/
+build_property.ProjectDir = C:\Users\gonga\source\repos\Netflis\src\Netflis.DbMigrator\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -14,6 +14,7 @@ using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Abp.OpenIddict.EntityFrameworkCore;
 using Volo.Abp.TenantManagement;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
+using Netflis.Series;
 
 namespace Netflis.EntityFrameworkCore;
 
@@ -26,7 +27,7 @@ public class NetflisDbContext :
     IIdentityDbContext
 {
     /* Add DbSet properties for your Aggregate Roots / Entities here. */
-
+    public DbSet<Serie> Series { get; set; }
 
     #region Entities from the modules
 
@@ -68,6 +69,23 @@ public class NetflisDbContext :
         base.OnModelCreating(builder);
 
         /* Include modules to your migration db context */
+        builder.Entity<Serie>(b =>
+        {
+            b.ToTable(NetflisConsts.DbTablePrefix + "Series",
+                NetflisConsts.DbSchema);
+            b.ConfigureByConvention(); //Establece una configuracion por defecto
+            b.Property(x => x.titulo).IsRequired().HasMaxLength(128);
+            b.Property(x => x.fechaLanzamiento).IsRequired();
+            b.Property(x => x.directores).IsRequired().HasMaxLength(128);
+            b.Property(x => x.escritores).IsRequired().HasMaxLength(128);
+            b.Property(x => x.elenco).IsRequired().HasMaxLength(128);
+            b.Property(x => x.portada).IsRequired().HasMaxLength(128);
+            b.Property(x => x.calificacionImdb).IsRequired();
+            b.Property(x => x.duracion).IsRequired();
+            b.Property(x => x.tipo).IsRequired().HasMaxLength(128);
+        }
+    );
+
 
         builder.ConfigurePermissionManagement();
         builder.ConfigureSettingManagement();
