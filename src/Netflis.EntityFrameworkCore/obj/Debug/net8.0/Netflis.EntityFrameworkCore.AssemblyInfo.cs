@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Netflis.EntityFrameworkCore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a6ed866f422ba648909e554b87e1d6bb4081672")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8cc1bfc385939a758d5d3233a588dd037a65df77")]
 [assembly: System.Reflection.AssemblyProductAttribute("Netflis.EntityFrameworkCore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Netflis.EntityFrameworkCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

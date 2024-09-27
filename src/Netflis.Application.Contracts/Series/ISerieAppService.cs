@@ -10,6 +10,6 @@ namespace Netflis.Series
 {
     public interface ISerieAppService : ICrudAppService<SerieDTO, int, PagedAndSortedResultRequestDto, CreateUpdateSerieDTO, CreateUpdateSerieDTO>
     {
-        Task<ICollection<SerieDTO>> SearchAsync(string titulo, string genero);
+        Task<ICollection<SerieDTO>> SearchAsync(string? titulo, string? genero); //El ? al final de string permite que el valor sea null
     }
 }

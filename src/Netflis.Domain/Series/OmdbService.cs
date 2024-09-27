@@ -11,6 +11,7 @@ using Volo.Abp.DependencyInjection;
 
 namespace Netflis.Series
 {
+    
     public class OmdbService : ISeriesApiService
     {
         private static readonly string apiKey = "f189f7f3"; // Reemplaza con tu clave API de OMDb.
@@ -40,7 +41,21 @@ namespace Netflis.Series
 
                 foreach (var serieOmdb in seriesOmdb)
                 {
-                    series.Add(new SerieDTO { title = serieOmdb.title });
+                    series.Add(new SerieDTO
+                    {
+                        title = serieOmdb.title,
+                        fechaLanzamiento = serieOmdb.fechaLanzamiento,
+                        directores = serieOmdb.directores,
+                        escritores = serieOmdb.escritores,
+                        elenco = serieOmdb.elenco,
+                        portada = serieOmdb.portada,
+                        paisOrigen = serieOmdb.paisOrigen,
+                        calificacionImdb = serieOmdb.calificacionImdb,
+                        duracion = serieOmdb.duracion,
+                        generos = serieOmdb.generos,
+                        trama = serieOmdb.trama,
+                        idioma = serieOmdb.idioma
+                    });
                 }
 
                 return series;
@@ -49,6 +64,7 @@ namespace Netflis.Series
             {
                 throw new Exception("Se ha producido un error en la búsqueda de la serie", e);
             }
+
         }
 
         private class SearchResponse
@@ -56,126 +72,46 @@ namespace Netflis.Series
             [JsonProperty("Search")]
             public List<SerieOmdb> Search { get; set; }
         }
+
         private class SerieOmdb
         {
+            [JsonProperty("Title")]
             public string title { get; set; }
+
+            [JsonProperty("Released")]
             public string fechaLanzamiento { get; set; }
+
+            [JsonProperty("Director")]
             public string directores { get; set; }
+
+            [JsonProperty("Writer")]
             public string escritores { get; set; }
+
+            [JsonProperty("Actors")]
             public string elenco { get; set; }
+
+            [JsonProperty("Poster")]
             public string portada { get; set; }
+
+            [JsonProperty("Country")]
             public string paisOrigen { get; set; }
+
+            [JsonProperty("imdbRating")]
             public string calificacionImdb { get; set; }
+
+            [JsonProperty("Runtime")]
             public string duracion { get; set; }
+
+            [JsonProperty("Genre")]
             public string generos { get; set; }
+
+            [JsonProperty("Plot")]
             public string trama { get; set; }
+
+            [JsonProperty("Language")]
             public string idioma { get; set; }
         }
     }
 
-    /*
-    public class OmdbService : ISeriesApiService
-    {
-
-        private readonly HttpClient _httpClient;
-        private const string ApiKey = "f189f7f3";
-        private const string BaseUrl = "http://www.omdbapi.com/";
-
-        // Constructor para inyectar HttpClient, no hace falta ya que viene con el framework
-         public OmdbService(HttpClient httpClient)
-        {
-            _httpClient = httpClient;
-        }
-
-    // Método POST para buscar series por título y género
-    public async Task<SerieDTO[]> GetSeriesAsync(string titulo, string genero)
-        {
-            // Crear el cuerpo de la solicitud en formato JSON
-            var searchRequest = new
-            {
-                Titulo = titulo,
-                Genero = genero
-            };
-
-            // Realizar la solicitud POST enviando el cuerpo como JSON
-            var response = await _httpClient.PostAsJsonAsync("https://localhost:44396/api/app/serie/search", searchRequest);
-
-            // Verificar si la solicitud fue exitosa
-            if (response.IsSuccessStatusCode)
-            {
-                // Leer y procesar la respuesta JSON
-                var jsonResponse = await response.Content.ReadAsStringAsync();
-                var json = JObject.Parse(jsonResponse);
-
-                // Verificar si la API devolvió resultados
-                if (json["Response"]?.ToString() == "False")
-                {
-                    return Array.Empty<SerieDTO>(); // No hay resultados
-                }
-
-                // Extraer la lista de series desde el JSON
-                var seriesJson = json["Search"];
-                if (seriesJson == null)
-                {
-                    return Array.Empty<SerieDTO>();
-                }
-
-                // Lista para almacenar las series mapeadas
-                var seriesList = new List<SerieDTO>();
-
-                // Procesar cada serie obtenida y obtener detalles adicionales
-                foreach (var serie in seriesJson)
-                {
-                    var serieId = serie["imdbID"]?.ToString();
-                    var serieDetails = await ObtenerDetallesSerieAsync(serieId);
-
-                    if (serieDetails != null)
-                    {
-                        seriesList.Add(serieDetails);
-                    }
-                }
-
-                return seriesList.ToArray(); // Devolver la lista de series
-            }
-
-            // Si la solicitud no fue exitosa, lanzar un error con el mensaje del servidor
-            var errorMessage = await response.Content.ReadAsStringAsync();
-            throw new Exception($"Error en la búsqueda de series: {errorMessage}");
-        }
-
-        // Método auxiliar para obtener los detalles de cada serie por ID
-        private async Task<SerieDTO> ObtenerDetallesSerieAsync(string serieId)
-        {
-            var url = $"{BaseUrl}?apikey={ApiKey}&i={serieId}";
-
-            // Realizar la solicitud GET para obtener detalles
-            var response = await _httpClient.GetAsync(url);
-            response.EnsureSuccessStatusCode();
-
-            var jsonResponse = await response.Content.ReadAsStringAsync();
-            var json = JObject.Parse(jsonResponse);
-
-            // Mapear el JSON a SerieDTO (implementa esta parte según tus necesidades)
-            var serieDTO = new SerieDTO
-            {
-                title = json["Title"]?.ToString(),
-                fechaLanzamiento = json["Released"]?.ToString(),
-                directores = json["Director"]?.ToString(),
-                escritores = json["Writer"]?.ToString(),
-                elenco = json["Actors"]?.ToString(),
-                portada = json["Poster"]?.ToString(),
-                paisOrigen = json["Country"]?.ToString(),
-                calificacionImdb = json["imdbRating"]?.ToString(),
-                duracion = json["Runtime"]?.ToString(),
-                trama = json["Plot"]?.ToString(),
-                idioma = json["Language"]?.ToString(),
-                generos = json["Genre"]?.ToString(),
-                // Otros campos
-            };
-
-            return serieDTO;
-        }
-    }
-    */
 }
 
