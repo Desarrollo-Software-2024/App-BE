@@ -11,8 +11,15 @@ namespace Netflis.Series
 {
     public class SerieAppService : CrudAppService<Serie, SerieDTO, int, PagedAndSortedResultRequestDto, CreateUpdateSerieDTO, CreateUpdateSerieDTO>, ISerieAppService
     {
-        public SerieAppService(IRepository<Serie, int> repository) : base(repository)
+
+        private readonly ISeriesApiService _seriesApiService;
+        public SerieAppService(IRepository<Serie, int> repository, ISeriesApiService seriesService): base(repository)
+        {  _seriesApiService = seriesService; }
+            
+        public async Task<ICollection<SerieDTO>> SearchAsync(string titulo, string genero)
         {
+            return await _seriesApiService.GetSeriesAsync(titulo, genero);
         }
     }
+
 }

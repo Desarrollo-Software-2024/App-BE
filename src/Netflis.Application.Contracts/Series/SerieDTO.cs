@@ -18,6 +18,8 @@ namespace Netflis.Series
         public string paisOrigen { get; set; }
         public int calificacionImdb { get; set; }
         public int duracion { get; set; }
-        public string tipo { get; set; }
+        public string generos { get; set; }
+        public string trama { get; set; }
+        public string idioma { get; set; }
     }
 }
