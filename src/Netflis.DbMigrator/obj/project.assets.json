@@ -4408,6 +4408,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Netflis.Application.Contracts": "1.0.0",
           "Netflis.Domain.Shared": "1.0.0",
           "Volo.Abp.AuditLogging.Domain": "8.3.0",
           "Volo.Abp.BackgroundJobs.Domain": "8.3.0",
@@ -11782,7 +11783,7 @@
       "projectName": "Netflis.DbMigrator",
       "projectPath": "C:\\Users\\gonga\\source\\repos\\Netflis\\src\\Netflis.DbMigrator\\Netflis.DbMigrator.csproj",
       "packagesPath": "C:\\Users\\gonga\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gonga\\Source\\Repos\\Netflis\\src\\Netflis.DbMigrator\\obj\\",
+      "outputPath": "C:\\Users\\gonga\\source\\repos\\Netflis\\src\\Netflis.DbMigrator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gonga\\source\\repos\\Netflis\\NuGet.Config",

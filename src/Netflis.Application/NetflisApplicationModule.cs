@@ -6,6 +6,8 @@ using Volo.Abp.AutoMapper;
 using Volo.Abp.FeatureManagement;
 using Volo.Abp.Modularity;
 using Volo.Abp.TenantManagement;
+using Microsoft.Extensions.DependencyInjection;
+using Netflis.Series;
 
 namespace Netflis;
 
@@ -27,5 +29,7 @@ public class NetflisApplicationModule : AbpModule
         {
             options.AddMaps<NetflisApplicationModule>();
         });
+
+        context.Services.AddTransient<ISeriesApiService, OmdbService>();
     }
 }

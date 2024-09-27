@@ -84,7 +84,9 @@ public class NetflisDbContext :
             b.Property(x => x.portada).IsRequired().HasMaxLength(128);
             b.Property(x => x.calificacionImdb).IsRequired();
             b.Property(x => x.duracion).IsRequired();
-            b.Property(x => x.tipo).IsRequired().HasMaxLength(128);
+            b.Property(x => x.generos).IsRequired().HasMaxLength(128);
+            b.Property(x => x.trama).IsRequired().HasMaxLength(128);
+            b.Property(x => x.idioma).IsRequired().HasMaxLength(128);
         }
     );
 

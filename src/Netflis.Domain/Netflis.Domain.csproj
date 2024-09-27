@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Netflis.Application.Contracts\Netflis.Application.Contracts.csproj" />
     <ProjectReference Include="..\Netflis.Domain.Shared\Netflis.Domain.Shared.csproj" />
   </ItemGroup>
 
