@@ -8,6 +8,6 @@ namespace Netflis.Series
 {
     public interface ISeriesApiService
     {
-        Task<SerieDTO[]> GetSeriesAsync(string titulo, string genero);
+        Task <ICollection<SerieDTO>> GetSeriesAsync(string titulo, string genero);
     }
 }

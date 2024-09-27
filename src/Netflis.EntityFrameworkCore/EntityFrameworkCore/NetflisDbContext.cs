@@ -76,14 +76,15 @@ public class NetflisDbContext :
             b.ToTable(NetflisConsts.DbTablePrefix + "Series",
                 NetflisConsts.DbSchema);
             b.ConfigureByConvention(); //Establece una configuracion por defecto
-            b.Property(x => x.titulo).IsRequired().HasMaxLength(128);
-            b.Property(x => x.fechaLanzamiento).IsRequired();
+            b.Property(x => x.title).IsRequired().HasMaxLength(128);
+            b.Property(x => x.fechaLanzamiento).IsRequired().HasMaxLength(128);
             b.Property(x => x.directores).IsRequired().HasMaxLength(128);
             b.Property(x => x.escritores).IsRequired().HasMaxLength(128);
             b.Property(x => x.elenco).IsRequired().HasMaxLength(128);
             b.Property(x => x.portada).IsRequired().HasMaxLength(128);
-            b.Property(x => x.calificacionImdb).IsRequired();
-            b.Property(x => x.duracion).IsRequired();
+            b.Property(x => x.paisOrigen).IsRequired().HasMaxLength(128);
+            b.Property(x => x.calificacionImdb).IsRequired().HasMaxLength(128);
+            b.Property(x => x.duracion).IsRequired().HasMaxLength(128);
             b.Property(x => x.generos).IsRequired().HasMaxLength(128);
             b.Property(x => x.trama).IsRequired().HasMaxLength(128);
             b.Property(x => x.idioma).IsRequired().HasMaxLength(128);

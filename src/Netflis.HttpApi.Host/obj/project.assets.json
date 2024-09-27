@@ -6006,6 +6006,7 @@
         "dependencies": {
           "Netflis.Application.Contracts": "1.0.0",
           "Netflis.Domain.Shared": "1.0.0",
+          "Newtonsoft.Json": "13.0.3",
           "Volo.Abp.AuditLogging.Domain": "8.3.0",
           "Volo.Abp.BackgroundJobs.Domain": "8.3.0",
           "Volo.Abp.BlobStoring.Database.Domain": "8.3.0",

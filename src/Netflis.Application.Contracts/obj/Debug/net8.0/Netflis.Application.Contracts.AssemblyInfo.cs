@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Netflis.Application.Contracts")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+280fed53fd16d750d3fcaadd0268a868f2d19ec6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a6ed866f422ba648909e554b87e1d6bb4081672")]
 [assembly: System.Reflection.AssemblyProductAttribute("Netflis.Application.Contracts")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Netflis.Application.Contracts")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
