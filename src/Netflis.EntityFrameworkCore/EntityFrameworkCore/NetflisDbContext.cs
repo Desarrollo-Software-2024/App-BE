@@ -16,6 +16,8 @@ using Volo.Abp.TenantManagement;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
 using Netflis.Series;
 using Netflis.ListaSeguimientos;
+using Netflis.Temporadas;
+using Netflis.Capitulos;
 
 namespace Netflis.EntityFrameworkCore;
 
@@ -29,6 +31,8 @@ public class NetflisDbContext :
 {
     /* Add DbSet properties for your Aggregate Roots / Entities here. */
     public DbSet<Serie> Series { get; set; }
+    public DbSet<Temporada> Temporadas { get; set; }
+    public DbSet<Capitulo> Capitulos { get; set; }
     public DbSet<ListaSeguimiento> ListaSeguimientos { get; set; }
 
     #region Entities from the modules
@@ -76,18 +80,69 @@ public class NetflisDbContext :
             b.ToTable(NetflisConsts.DbTablePrefix + "Series",
                 NetflisConsts.DbSchema);
             b.ConfigureByConvention(); //Establece una configuracion por defecto
-            b.Property(x => x.title).IsRequired().HasMaxLength(128);
-            b.Property(x => x.fechaLanzamiento).IsRequired().HasMaxLength(128);
-            b.Property(x => x.directores).IsRequired().HasMaxLength(128);
-            b.Property(x => x.escritores).IsRequired().HasMaxLength(128);
-            b.Property(x => x.elenco).IsRequired().HasMaxLength(128);
-            b.Property(x => x.portada).IsRequired().HasMaxLength(128);
-            b.Property(x => x.paisOrigen).IsRequired().HasMaxLength(128);
-            b.Property(x => x.calificacionImdb).IsRequired().HasMaxLength(128);
-            b.Property(x => x.duracion).IsRequired().HasMaxLength(128);
-            b.Property(x => x.generos).IsRequired().HasMaxLength(128);
-            b.Property(x => x.trama).IsRequired().HasMaxLength(128);
-            b.Property(x => x.idioma).IsRequired().HasMaxLength(128);
+            b.Property(s => s.title).IsRequired().HasMaxLength(128);
+            b.Property(s => s.fechaLanzamiento).IsRequired().HasMaxLength(128);
+            b.Property(s => s.directores).IsRequired().HasMaxLength(128);
+            b.Property(s => s.escritores).IsRequired().HasMaxLength(128);
+            b.Property(s => s.elenco).IsRequired().HasMaxLength(128);
+            b.Property(s => s.portada).IsRequired().HasMaxLength(128);
+            b.Property(s => s.paisOrigen).IsRequired().HasMaxLength(128);
+            b.Property(s => s.calificacionImdb).IsRequired().HasMaxLength(128);
+            b.Property(s => s.duracion).IsRequired().HasMaxLength(128);
+            b.Property(s => s.generos).IsRequired().HasMaxLength(128);
+            b.Property(s => s.trama).IsRequired().HasMaxLength(128);
+            b.Property(s => s.idioma).IsRequired().HasMaxLength(128);
+            b.Property(s => s.TotalTemporadas).IsRequired();
+
+            // Relación con Capitulos (1:N)
+            b.HasMany(s => s.Temporadas)
+                .WithOne(t => t.Serie)
+                .HasForeignKey(t => t.serieId);
+        }
+        );
+
+        builder.Entity<Temporada>(b =>
+        {
+            b.ToTable(NetflisConsts.DbTablePrefix + "Temporadas",
+                NetflisConsts.DbSchema);
+            b.ConfigureByConvention(); //Establece una configuracion por defecto
+            b.Property(t => t.numero).IsRequired();
+            b.Property(t => t.titulo).IsRequired().HasMaxLength(128);
+            b.Property(t => t.fechaLanzamiento).IsRequired().HasMaxLength(128);
+            b.Property(t => t.descripcion).IsRequired().HasMaxLength(128);
+            b.Property(t => t.serieId).IsRequired();
+
+            // Clave externa y relación con Serie
+            b.HasOne(t => t.Serie)
+                .WithMany(s => s.Temporadas)
+                .HasForeignKey(t => t.serieId)
+                .IsRequired();
+
+            // Relación con Capitulos (1:N)
+            b.HasMany(t => t.Capitulos)
+                .WithOne(c => c.Temp)
+                .HasForeignKey(c => c.temporadaID);
+        }
+    );
+        builder.Entity<Capitulo>(b =>
+        {
+            b.ToTable(NetflisConsts.DbTablePrefix + "Capitulos",
+                NetflisConsts.DbSchema);
+            b.ConfigureByConvention(); //Establece una configuracion por defecto
+            b.Property(c => c.numeroEpisodio).IsRequired();
+            b.Property(c => c.titulo).IsRequired().HasMaxLength(128);
+            b.Property(c => c.fechaEstreno).IsRequired().HasMaxLength(128);
+            b.Property(c => c.directores).IsRequired().HasMaxLength(128);
+            b.Property(c => c.escritores).IsRequired().HasMaxLength(128);
+            b.Property(c => c.duracion).IsRequired().HasMaxLength(128);
+            b.Property(c => c.resumen).IsRequired().HasMaxLength(128);
+            b.Property(c => c.temporadaID).IsRequired();
+
+            // Clave externa y relación con Temporada
+            b.HasOne(c => c.Temp)
+                .WithMany(t => t.Capitulos)
+                .HasForeignKey(c => c.temporadaID)
+                .IsRequired();
         }
     );
 

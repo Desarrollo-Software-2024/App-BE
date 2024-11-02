@@ -11,7 +11,7 @@
         "projectName": "Netflis.Domain.Shared",
         "projectPath": "C:\\Users\\gonga\\source\\repos\\Netflis\\src\\Netflis.Domain.Shared\\Netflis.Domain.Shared.csproj",
         "packagesPath": "C:\\Users\\gonga\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gonga\\Source\\Repos\\Netflis\\src\\Netflis.Domain.Shared\\obj\\",
+        "outputPath": "C:\\Users\\gonga\\source\\repos\\Netflis\\src\\Netflis.Domain.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gonga\\source\\repos\\Netflis\\NuGet.Config",

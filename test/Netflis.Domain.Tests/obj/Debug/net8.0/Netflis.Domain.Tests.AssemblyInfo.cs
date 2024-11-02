@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Netflis.Domain.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8cc1bfc385939a758d5d3233a588dd037a65df77")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41f9d97c762528ebb289b97be80642f95dedac08")]
 [assembly: System.Reflection.AssemblyProductAttribute("Netflis.Domain.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Netflis.Domain.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

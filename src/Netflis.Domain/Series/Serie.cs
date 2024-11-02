@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Netflis.Temporadas;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Metadata;
@@ -23,6 +24,8 @@ namespace Netflis.Series
         public string generos { get; set; }
         public string trama { get; set; }
         public string idioma { get; set; }
+        public int TotalTemporadas { get; set; }
+        public ICollection<Temporada> Temporadas { get; set; }
 
     }
 

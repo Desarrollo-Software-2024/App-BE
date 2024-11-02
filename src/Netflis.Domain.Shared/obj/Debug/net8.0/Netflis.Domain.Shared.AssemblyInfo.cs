@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Netflis.Domain.Shared")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+56cc69baa81629f86236d4f6fb13f6237b860f37")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41f9d97c762528ebb289b97be80642f95dedac08")]
 [assembly: System.Reflection.AssemblyProductAttribute("Netflis.Domain.Shared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Netflis.Domain.Shared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
