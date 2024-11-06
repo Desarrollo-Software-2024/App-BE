@@ -11,7 +11,7 @@ using Volo.Abp.DependencyInjection;
 
 namespace Netflis.Series
 {
-    
+    //Se usa en Buscar-Serie por titulo o genero
     public class OmdbService : ISeriesApiService
     {
         private static readonly string apiKey = "f189f7f3"; // Reemplaza con tu clave API de OMDb.

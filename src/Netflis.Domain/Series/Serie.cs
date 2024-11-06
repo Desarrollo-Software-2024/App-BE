@@ -11,7 +11,7 @@ namespace Netflis.Series
 {
     public class Serie : AggregateRoot<int>
     {
-
+        public string ImdbId { get; set; }
         public string title { get; set; }
         public string fechaLanzamiento { get; set; }
         public string directores { get; set; }
@@ -24,7 +24,7 @@ namespace Netflis.Series
         public string generos { get; set; }
         public string trama { get; set; }
         public string idioma { get; set; }
-        public int TotalTemporadas { get; set; }
+        public int totalTemporadas { get; set; }
         public ICollection<Temporada> Temporadas { get; set; }
 
     }

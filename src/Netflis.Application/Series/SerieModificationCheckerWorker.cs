@@ -10,66 +10,47 @@ using Volo.Abp.Threading;
 using Volo.Abp.Users;
 using Volo.Abp.Domain.Repositories;
 using Netflis.Series;
+using System.Threading;
+using Microsoft.Extensions.Hosting;
 
 namespace TvTracker.Series
 {
-    public class SerieModificationCheckerWorker : AsyncPeriodicBackgroundWorkerBase
+    public class SerieUpdateBackgroundService : BackgroundService //AsyncPeriodicBackgroundWorkerBase
     {
 
-        public SerieModificationCheckerWorker(
-                AbpAsyncTimer timer,
-                IServiceScopeFactory serviceScopeFactory
-            ) : base(
-                timer, serviceScopeFactory)
+        private readonly IServiceProvider _serviceProvider;
+        private readonly ILogger<SerieUpdateBackgroundService> _logger;
+        private readonly TimeSpan _updateInterval = TimeSpan.FromMinutes(15); // Intervalo de actualización
+
+        public SerieUpdateBackgroundService(IServiceProvider serviceProvider, ILogger<SerieUpdateBackgroundService> logger)
         {
-            Timer.Period = 600000; //10 minutos
+            _serviceProvider = serviceProvider;
+            _logger = logger;
         }
 
-        protected async override Task DoWorkAsync(
-            PeriodicBackgroundWorkerContext workerContext)
+        protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            Logger.LogInformation("Iniciando: Verificando modificaciones de series...");
-
-            // Ejemplo: obtienes las series modificadas y envías notificaciones si es necesario.
-            var modifiedSeries = await CheckSeriesModificationsAsync();
-
-            if (modifiedSeries.Any())
+            while (!stoppingToken.IsCancellationRequested)
             {
-                foreach (var serie in modifiedSeries)
+                _logger.LogInformation("Iniciando actualización periódica de series...");
+
+                using (var scope = _serviceProvider.CreateScope())
                 {
+                    var omdbApiService = scope.ServiceProvider.GetRequiredService<OmdbApiService>();
+                    var serieRepository = scope.ServiceProvider.GetRequiredService<IRepository<Serie, int>>();
 
-                    Logger.LogInformation($"La serie {serie.title} ha sido actualizada.");
+                    var series = await serieRepository.GetListAsync();
 
+                    foreach (var serie in series)
+                    {
+                        await omdbApiService.UpdateSerieFromOmdbAsync(serie.ImdbId); // Actualizar desde OMDb
+                    }
                 }
+
+                _logger.LogInformation("Actualización periódica de series completada.");
+
+                await Task.Delay(_updateInterval, stoppingToken);
             }
-
-            Logger.LogInformation("Finalizado: Verificación de modificaciones de series.");
-        }
-
-        private async Task<List<Serie>> CheckSeriesModificationsAsync()
-        {
-            // Consultar las series desde la base de datos o API
-            var series = await _serieRepository.GetListAsync();
-
-            // Lista para almacenar las series que han sido modificadas
-            var modifiedSeries = new List<Serie>();
-
-            // Obtener la fecha actual para comparar con las fechas de modificación
-            var currentDate = DateTime.Now;
-
-            foreach (var serie in series)
-            {
-                // Suponiendo que cada serie tiene una propiedad 'FechaModificacion'
-                // que indica la última vez que fue modificada
-                if (serie.FechaModificacion != null && serie.FechaModificacion.Value > currentDate.AddDays(-1))
-                {
-                    // Si la serie ha sido modificada en las últimas 24 horas, la agregamos a la lista
-                    modifiedSeries.Add(serie);
-                }
-            }
-
-            // Devolver la lista de series modificadas
-            return modifiedSeries;
         }
     }
 }

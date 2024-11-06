@@ -1,15 +1,13 @@
-﻿using Netflis.Capitulos;
-using Netflis.Series;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Volo.Abp.Domain.Entities;
+using Volo.Abp.Application.Dtos;
 
-namespace Netflis.Temporadas
+namespace Netflis.Series
 {
-    public class Temporada : Entity<int>
+    public class TemporadaDTO : EntityDto<int>
     {
         public int numero { get; set; }
         public string titulo { get; set; }
@@ -18,7 +16,9 @@ namespace Netflis.Temporadas
 
         //Foreign key
         public int serieId { get; set; }
-        public Serie Serie { get; set; }
-        public ICollection<Capitulo> Capitulos { get; set; }
+
+        //REVISAR, PROBLEMA CON DEPENDENCIA CIRCULAR
+        public SerieDTO Serie { get; set; }
+        public ICollection<CapituloDTO> Capitulos { get; set;} 
     }
 }
