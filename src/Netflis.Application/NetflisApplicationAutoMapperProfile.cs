@@ -17,11 +17,16 @@ public class NetflisApplicationAutoMapperProfile : Profile
         CreateMap<Serie, SerieDTO>().ReverseMap();
         //CreateMap<SerieDTO, Serie>();
 
-        CreateMap<CreateUpdateSerieDTO, Serie>();
+        CreateMap<CreateUpdateSerieDTO, Serie>().ReverseMap();
 
-        CreateMap<Temporada, TemporadaDTO>();
+        CreateMap<Temporada, TemporadaDTO>().ReverseMap();
 
-        CreateMap<Capitulo, CapituloDTO>();
+        CreateMap<Capitulo, CapituloDTO>().ReverseMap();
+
+        //Notificaciones
+        CreateMap<CapituloAdded, CapituloAddedDTO>().ReverseMap();
+        CreateMap<SerieUpdated, SerieUpdatedDTO>().ReverseMap();
+        CreateMap<TemporadaAdded, TemporadaAddedDTO>().ReverseMap();
 
     }
 }

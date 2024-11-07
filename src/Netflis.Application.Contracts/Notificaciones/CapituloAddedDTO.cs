@@ -7,9 +7,10 @@ using Volo.Abp.Application.Dtos;
 
 namespace Netflis.Notificaciones
 {
-    public class TemporadaAddedDTO : EntityDto<int>
+    public class CapituloAddedDTO : EntityDto<int>
     {
-        public string serieId { get; set; }
-        public int numeroTemporada { get; set; }
+        public string temporadaId { get; set; }
+        public int capituloNumero { get; set; }
+        public string titulo { get; set; }
     }
 }

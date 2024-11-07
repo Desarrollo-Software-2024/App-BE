@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Netflis.DbMigrator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7eb2349805c7d4d462055ee8f898a2bd165cc7c2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d9d0cac69155936f484940bed12b8497ff44515")]
 [assembly: System.Reflection.AssemblyProductAttribute("Netflis.DbMigrator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Netflis.DbMigrator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

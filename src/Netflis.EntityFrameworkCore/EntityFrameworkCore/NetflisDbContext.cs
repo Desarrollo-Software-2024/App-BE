@@ -37,6 +37,7 @@ public class NetflisDbContext :
     public DbSet<ListaSeguimiento> ListaSeguimientos { get; set; }
     public DbSet<SerieUpdated> SerieUpdated { get; set; }
     public DbSet<TemporadaAdded> TemporadaAdded { get; set; }
+    public DbSet<CapituloAdded> CapituloAdded { get; set; }
 
     #region Entities from the modules
 
