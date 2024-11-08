@@ -57,7 +57,7 @@ namespace Netflis.Series
 
                 await _serieManager.UpdateSerieAsync(mapeoSerie);
 
-                await _eventBus.PublishAsync(new SerieUpdated
+                await _eventBus.PublishAsync(new SerieUpdatedDTO
                 {
                     serieId = serie.ImdbId,
                     updateTitle = serie.title,

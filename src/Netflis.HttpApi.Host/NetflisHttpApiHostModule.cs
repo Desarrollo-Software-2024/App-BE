@@ -38,6 +38,7 @@ using Volo.Abp.OpenIddict;
 using Volo.Abp.Swashbuckle;
 using Volo.Abp.Studio.Client.AspNetCore;
 using Volo.Abp.Security.Claims;
+using Netflis.Notificaciones;
 
 namespace Netflis;
 
@@ -89,6 +90,9 @@ public class NetflisHttpApiHostModule : AbpModule
     {
         var configuration = context.Services.GetConfiguration();
         var hostingEnvironment = context.Services.GetHostingEnvironment();
+
+        //Agregamos esto para Notificaciones
+        context.Services.AddSignalR();
 
         if (!configuration.GetValue<bool>("App:DisablePII"))
         {
@@ -210,6 +214,13 @@ public class NetflisHttpApiHostModule : AbpModule
     {
         var app = context.GetApplicationBuilder();
         var env = context.GetEnvironment();
+
+        //Agregamos esto para Notificaciones
+        app.UseEndpoints(endpoints =>
+        {
+            endpoints.MapHub<NotificationHub>("/notificationHub");
+        });
+
 
         if (env.IsDevelopment())
         {
