@@ -10,7 +10,7 @@ using Volo.Abp.Domain.Repositories;
 namespace Netflis.Series
 {
     //Esta clase heredaba de ISerieAppService, pero daba error de que no se utilizaba
-    public class SerieAppService : CrudAppService<Serie, SerieDTO, int, PagedAndSortedResultRequestDto, CreateUpdateSerieDTO, CreateUpdateSerieDTO>
+    public class SerieAppService : CrudAppService<Serie, SerieDTO, int, PagedAndSortedResultRequestDto, CreateUpdateSerieDTO, CreateUpdateSerieDTO>, ISerieAppService
     {
 
         private readonly ISeriesApiService _seriesApiService;
@@ -30,6 +30,11 @@ namespace Netflis.Series
         {
             // Lógica para actualizar la serie en el repositorio
             await _serieRepository.UpdateAsync(serie);
+        }
+
+        public Task UpdateSerieAsync(SerieDTO serie)
+        {
+            throw new NotImplementedException();
         }
     }
 

@@ -19,6 +19,7 @@ using Netflis.ListaSeguimientos;
 using Netflis.Temporadas;
 using Netflis.Capitulos;
 using Netflis.Notificaciones;
+using Netflis.MonitoreoApi;
 
 namespace Netflis.EntityFrameworkCore;
 
@@ -38,6 +39,8 @@ public class NetflisDbContext :
     public DbSet<SerieUpdated> SerieUpdated { get; set; }
     public DbSet<TemporadaAdded> TemporadaAdded { get; set; }
     public DbSet<CapituloAdded> CapituloAdded { get; set; }
+    public DbSet<ApiAccessLog> ApiAccessLogs { get; set; }
+    public DbSet<TotalApiMonitoringStats> TotalApiMonitoringStats { get; set; }
 
     #region Entities from the modules
 
@@ -176,6 +179,30 @@ public class NetflisDbContext :
             b.Property(c => c.temporadaId).IsRequired().HasMaxLength(10);
             b.Property(c => c.capituloNumero).IsRequired();
             b.Property(c => c.titulo).IsRequired().HasMaxLength(128);
+        });
+
+        builder.Entity<ApiAccessLog>(b =>
+        {
+            b.ToTable(NetflisConsts.DbTablePrefix + "ApiAccessLog",
+                NetflisConsts.DbSchema);
+            b.ConfigureByConvention(); //Establece una configuracion por defecto
+            b.HasKey(a => a.Id);
+            b.Property(a => a.RequestTime).IsRequired();
+            b.Property(a => a.ResponseTimeMs).IsRequired();
+            b.Property(a => a.IsSuccessful).IsRequired();
+            b.Property(a => a.Endpoint).IsRequired().HasMaxLength(200);
+            b.Property(a => a.ErrorMessage).IsRequired(false).HasMaxLength(1000);
+        });
+
+        builder.Entity<TotalApiMonitoringStats>(b =>
+        {
+            b.ToTable(NetflisConsts.DbTablePrefix + "TotalApiMonitoringStats",
+                NetflisConsts.DbSchema);
+            b.ConfigureByConvention(); //Establece una configuracion por defecto
+            b.HasKey(t => t.Id);
+            b.Property(t => t.TotalAccesses).IsRequired();
+            b.Property(t => t.AverageResponseTime).IsRequired();
+            b.Property(t => t.TotalErrors).IsRequired();
         });
 
 

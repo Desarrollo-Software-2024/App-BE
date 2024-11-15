@@ -4265,6 +4265,7 @@
         "dependencies": {
           "Netflis.Domain.Shared": "1.0.0",
           "Volo.Abp.Account.Application.Contracts": "8.3.0",
+          "Volo.Abp.Ddd.Domain": "8.3.0",
           "Volo.Abp.FeatureManagement.Application.Contracts": "8.3.0",
           "Volo.Abp.Identity.Application.Contracts": "8.3.0",
           "Volo.Abp.PermissionManagement.Application.Contracts": "8.3.0",

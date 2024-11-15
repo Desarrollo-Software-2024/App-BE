@@ -6008,6 +6008,7 @@
           "Microsoft.AspNetCore.SignalR.Core": "1.1.0",
           "Netflis.Application.Contracts": "1.0.0",
           "Netflis.Domain": "1.0.0",
+          "Netflis.EntityFrameworkCore": "1.0.0",
           "Volo.Abp.Account.Application": "8.3.0",
           "Volo.Abp.FeatureManagement.Application": "8.3.0",
           "Volo.Abp.Identity.Application": "8.3.0",
@@ -6028,6 +6029,7 @@
         "dependencies": {
           "Netflis.Domain.Shared": "1.0.0",
           "Volo.Abp.Account.Application.Contracts": "8.3.0",
+          "Volo.Abp.Ddd.Domain": "8.3.0",
           "Volo.Abp.FeatureManagement.Application.Contracts": "8.3.0",
           "Volo.Abp.Identity.Application.Contracts": "8.3.0",
           "Volo.Abp.PermissionManagement.Application.Contracts": "8.3.0",

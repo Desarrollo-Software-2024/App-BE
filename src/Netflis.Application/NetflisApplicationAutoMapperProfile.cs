@@ -1,5 +1,6 @@
 using AutoMapper;
 using Netflis.Capitulos;
+using Netflis.MonitoreoApi;
 using Netflis.Notificaciones;
 using Netflis.Series;
 using Netflis.Temporadas;
@@ -27,6 +28,9 @@ public class NetflisApplicationAutoMapperProfile : Profile
         CreateMap<CapituloAdded, CapituloAddedDTO>().ReverseMap();
         CreateMap<SerieUpdated, SerieUpdatedDTO>().ReverseMap();
         CreateMap<TemporadaAdded, TemporadaAddedDTO>().ReverseMap();
+
+        CreateMap<ApiAccessLog, ApiAccessLogDTO>().ReverseMap();
+        CreateMap<TotalApiMonitoringStats, TotalApiMonitoringStatsDTO>().ReverseMap();
 
     }
 }

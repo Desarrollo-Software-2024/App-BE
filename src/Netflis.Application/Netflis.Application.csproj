@@ -11,6 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Netflis.Domain\Netflis.Domain.csproj" />
     <ProjectReference Include="..\Netflis.Application.Contracts\Netflis.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Netflis.EntityFrameworkCore\Netflis.EntityFrameworkCore.csproj" />
   </ItemGroup>
 
   <ItemGroup>

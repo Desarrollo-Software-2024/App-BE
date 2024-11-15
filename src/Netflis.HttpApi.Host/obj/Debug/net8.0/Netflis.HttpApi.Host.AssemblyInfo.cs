@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Netflis.HttpApi.Host")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b1b15de9c71614a8577f48896cef93685634383")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+882ab0d6d5de05fafbf84ae25360c50eb2946130")]
 [assembly: System.Reflection.AssemblyProductAttribute("Netflis.HttpApi.Host")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Netflis.HttpApi.Host")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

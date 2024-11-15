@@ -55,6 +55,10 @@
               "target": "Package",
               "version": "[8.3.0, )"
             },
+            "Volo.Abp.Ddd.Domain": {
+              "target": "Package",
+              "version": "[8.3.0, )"
+            },
             "Volo.Abp.FeatureManagement.Application.Contracts": {
               "target": "Package",
               "version": "[8.3.0, )"
@@ -127,6 +131,9 @@
               },
               "C:\\Users\\gonga\\source\\repos\\Netflis\\src\\Netflis.Domain\\Netflis.Domain.csproj": {
                 "projectPath": "C:\\Users\\gonga\\source\\repos\\Netflis\\src\\Netflis.Domain\\Netflis.Domain.csproj"
+              },
+              "C:\\Users\\gonga\\source\\repos\\Netflis\\src\\Netflis.EntityFrameworkCore\\Netflis.EntityFrameworkCore.csproj": {
+                "projectPath": "C:\\Users\\gonga\\source\\repos\\Netflis\\src\\Netflis.EntityFrameworkCore\\Netflis.EntityFrameworkCore.csproj"
               }
             }
           }

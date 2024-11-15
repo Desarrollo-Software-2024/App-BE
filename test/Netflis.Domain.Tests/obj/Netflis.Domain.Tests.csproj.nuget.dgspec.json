@@ -55,6 +55,10 @@
               "target": "Package",
               "version": "[8.3.0, )"
             },
+            "Volo.Abp.Ddd.Domain": {
+              "target": "Package",
+              "version": "[8.3.0, )"
+            },
             "Volo.Abp.FeatureManagement.Application.Contracts": {
               "target": "Package",
               "version": "[8.3.0, )"

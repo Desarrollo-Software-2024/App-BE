@@ -2984,6 +2984,7 @@
         "dependencies": {
           "Netflis.Domain.Shared": "1.0.0",
           "Volo.Abp.Account.Application.Contracts": "8.3.0",
+          "Volo.Abp.Ddd.Domain": "8.3.0",
           "Volo.Abp.FeatureManagement.Application.Contracts": "8.3.0",
           "Volo.Abp.Identity.Application.Contracts": "8.3.0",
           "Volo.Abp.PermissionManagement.Application.Contracts": "8.3.0",
@@ -8170,7 +8171,7 @@
       "projectName": "Netflis.HttpApi",
       "projectPath": "C:\\Users\\gonga\\source\\repos\\Netflis\\src\\Netflis.HttpApi\\Netflis.HttpApi.csproj",
       "packagesPath": "C:\\Users\\gonga\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gonga\\Source\\Repos\\Netflis\\src\\Netflis.HttpApi\\obj\\",
+      "outputPath": "C:\\Users\\gonga\\source\\repos\\Netflis\\src\\Netflis.HttpApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gonga\\source\\repos\\Netflis\\NuGet.Config",
